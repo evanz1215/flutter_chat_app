@@ -69,7 +69,10 @@ class _AuthScreenState extends State<AuthScreen> {
           backgroundColor: Theme.of(context).colorScheme.error,
         ),
       );
-      _isAuthenticating = false;
+
+      setState(() {
+        _isAuthenticating = false;
+      });
     }
   }
 
